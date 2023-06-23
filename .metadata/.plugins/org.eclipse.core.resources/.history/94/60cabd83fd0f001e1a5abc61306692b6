@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	
+	<title></title>
+	<style>
+	 pre{
+		background-color : gold;
+		font-size : 2.0em;
+	 }
+	 h1, h2, h3{
+		background-color : yellow;
+	 }
+	 h4{
+		background-color : pink;
+	 }
+	 img{
+		width : 200px;
+		height : 200px;
+	 }
+	</style>
+	</head>
+	
+	<body>
+	<pre>
+		제목을 표시
+		&lt;h1> ~ &lt;h6>
+		블럭요소에 해당
+	</pre>
+	
+	<!-- h1 ~ h6태그는 제목을 표시할 때 사용하는 태그입니다-->
+	<h1>무궁화 꽃이 피었습니다</h1>
+	<h2>무궁화 꽃이 피었습니다</h2>
+	<h3>무궁화 꽃이 피었습니다</h3>
+	<h4>무궁화 꽃이 피었습니다</h4>
+	<h5>무궁화 꽃이 피었습니다</h5>
+	<h6>무궁화 꽃이 피었습니다</h6>
+	
+	<!-- img 이미지를 나타내는 태그 src=""속성이 필요, 닫는 태그가 없다-->
+	<img src="수국1.jpg">
+	<img src="수국2.jpg">
+	<img src="수국3.jpg">
+	
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+ul{
+	border : 2px dotted blue;
+	width : 20%;
+	height : 110px;
+	float : left;
+	margin : 10px;
+}
+
+</style>
+</head>
+<body>
+<ul id="u1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVA SCRIPT</li>
+      <li>JQUERY</li>
+   </ul>
+   
+   <ul id="u2">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVA SCRIPT</li>
+      <li>JQUERY</li>
+   </ul>
+</body>
+</html>

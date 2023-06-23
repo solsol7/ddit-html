@@ -1,0 +1,23 @@
+
+6월 21, 2023 17:25:20.236 NEW SESSION
+6월 21, 2023 17:25:20.236 [13016:4564:0621/172520.235:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+6월 21, 2023 17:25:20.236 ERROR: Couldn't read tbsCertificate as SEQUENCE
+6월 21, 2023 17:25:20.236 ERROR: Failed parsing Certificate
+6월 21, 2023 17:25:20.236 
+6월 21, 2023 17:25:20.264 [13016:4564:0621/172520.264:ERROR:cert_verify_proc_builtin.cc(702)] CertVerifyProcBuiltin for sync.hgrtb.com failed:
+6월 21, 2023 17:25:20.265 ----- Certificate i=0 (CN=sync.hgrtb.com) -----
+6월 21, 2023 17:25:20.265 ERROR: Time is after notAfter
+6월 21, 2023 17:25:20.265 
+6월 21, 2023 17:25:20.265 
+6월 21, 2023 19:02:40.912 [9544:7664:0621/190240.911:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+
+6월 22, 2023 18:13:45.272 NEW SESSION
+6월 22, 2023 18:13:45.272 [14240:248:0622/181345.271:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+6월 22, 2023 19:38:47.786 [14240:248:0622/193844.247:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+6월 23, 2023 14:08:53.760 NEW SESSION
+6월 23, 2023 14:08:53.760 [2496:13748:0623/140853.759:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.121 s for first_image_paint 0.104 s
+6월 23, 2023 14:08:53.958 [2496:13748:0623/140853.958:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.121 s for first_image_paint 0.104 s
+6월 23, 2023 14:08:54.95 [2496:13748:0623/140854.094:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.121 s for first_image_paint 0.104 s
+6월 23, 2023 14:08:54.248 [2496:13748:0623/140854.248:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.121 s for first_image_paint 0.104 s
+6월 23, 2023 14:08:54.368 [2496:13748:0623/140854.368:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.121 s for first_image_paint 0.104 s

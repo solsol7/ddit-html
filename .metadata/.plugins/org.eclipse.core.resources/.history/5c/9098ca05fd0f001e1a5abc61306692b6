@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<style>				
+		p{
+			background-color : yellow;
+			font-size : 20px;
+		}
+		a{
+			background-color : pink;
+			font-size : 40px;
+		}
+		pre{
+			background-color : lightblue;
+			font-size : 20px;
+		}
+		</style>
+		
+	</head>
+
+	<body>
+<pre>
+&lt;br> : 줄바꿈		<!--&lt;의 영향을 받아 &gt;말고 >그대로 써도 됨-->
+&lt;p&gt; : paragraph , 짧은 단락
+	한줄 전체를 차지한다 , 자동으로 줄이 바뀐다
+	블럭요소에 해당(한 줄 전체를 차지)
+&lt;a> : hyper link
+	페이지 이동을 위한 태그
+	인라인요소에 해당한다 (블럭요소의 반대-글자의 길이 만큼만 자리를 차지한다)
+&lt;pre> : 미리 보는 형식
+	입력한 모양대로 출력이 된다
+	블럭요소에 해당
+</pre>
+		hello
+		안녕하세요
+		무궁화꽃이 피었습니다.
+		<br>
+		hello<br>
+		안녕하세요<br>
+		무궁화꽃이 피었습니다.<br>
+		
+		<p title="단락">p태그 paragraph 짧은 단락을 표시</p>
+		<p title="hello">hello</p>
+		<p title="안녕">안녕하세요</p>
+		<p title="무궁화">무궁화꽃이 피었습니다.</p>
+		
+		<pre>
+			Hello
+			무궁화               꽃이            피었습니다
+			
+			
+			
+			안녕하세요
+		</pre>
+		
+		<a href="http://www.naver.com">네이버</a><br>
+		<a href="http://www.daum.net">다음</a><br>
+		<a href="http://www.w3schools.com">w3schools</a><br>
+		
+	</body>
+</html>
+

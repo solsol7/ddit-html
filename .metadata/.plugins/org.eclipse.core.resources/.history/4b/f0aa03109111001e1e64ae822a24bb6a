@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<audio src="../multi/old_pop.mp3" autoplay="autoplay" controls="controls"></audio>
+<!-- 앞뒤가 같을 때 뒤에거 생략하고 속성 이름만 쓸 수 있다 (="autoplay" 생략가능) -->
+<br>
+<br>
+
+<video width="640" height="480" controls>
+        <source src="trailer.mp4" type='video/mp4'>
+        <source src="trailer.ogv"  type='video/ogg'>
+    </video>
+
+
+</body>
+</html>
