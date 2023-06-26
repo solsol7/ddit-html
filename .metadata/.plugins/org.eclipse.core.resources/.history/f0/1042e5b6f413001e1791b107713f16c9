@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<!-- submit안할거니까 action, method 안함 -->
+물품가격 <input type="text" id="price" name="price"><br>
+수량 <input type="text" id="qty" name="qty"><br>
+
+<br>
+<input type="button" value="계산하기">
+
+</form>
+
+<br>
+<div id="result"></div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="inputtest1.jsp" method="post">
+
+아이디 <input type="text" name="id" value="aa"> <br>
+<!-- value값 주면 초기값으로 aa가 실행되어 화면에 나옴 -->
+비밀번호 <input type="password" name="pass"> <br>
+성별 <input type="radio" name="gender">남자
+   <input type="radio" name="gender">여자 <br>
+좋아하는과일 <input type="checkbox" name="fruits">사과
+		 <input type="checkbox" name="fruits">복숭아
+		 <input type="checkbox" name="fruits">참외
+		 <input type="checkbox" name="fruits">수박
+		 <input type="checkbox" name="fruits">망고
+		 <input type="checkbox" name="fruits">자두
+		 <input type="checkbox" name="fruits">딸기
+
+</form>
+</body>
+</html>
