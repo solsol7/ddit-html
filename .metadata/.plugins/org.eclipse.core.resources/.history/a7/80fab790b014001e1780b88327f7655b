@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="buttontest1.jsp" method="post">
+	아이디 <input type="text" name="id"><br>
+	이름 <input type="text" name="name"><br>
+	전화번호 <input type="tel" name="tel"><br>
+	
+	<br>
+	<button>전송</button>
+	<button type="button">확인</button>
+	<button type="submit">전송</button>
+	<button type="reset">초기화</button>
+	
+	<br><br>
+	<input>
+<!-- 	타입이 없는 input은 그냥 텍스트 -->
+	<input type="button" value="확인">
+	<input type="submit">
+	<input type="reset">
+	<input type="image" src="../images/숲11.jpg" alt="">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+label{
+	display : inline-block;
+	width : 100px;
+	height : 30px;
+}
+textarea{
+	vertical-align: top;
+/* 	고객의 의견이랑 textarea 위로 맞추기 */
+}
+input[type=text]{
+	text-align: center;
+}
+</style>
+
+<script>
+// onclick에 있는 함수
+function check(){
+	//id가 area인 html요소를 검색한다.
+	var areaValue = document.getElementById('area').value;
+	//document~~검색해서 >> .value 값을 가져와라
+	console.log(areaValue)
+	
+	var varea=decument.ElementById('area');
+	var areaValue = varea.value;
+	//위에꺼나 아래꺼나 똑같음 - 변수 두개 똑같이 선언해서 써도 스크립트에서는 에러 안남 - 뒤에서 실행된 값만 남음
+	
+	console.log(areaValue)
+}
+</script>
+
+</head>
+<body>
+<form action="buttontest1.jsp" method="post">
+	<label for="id">아이디</label>
+<!-- 	for => 아이디랑 일치시킴 -->
+	<input type="text" id="id" name="id"><br>
+	
+	<label for="name">이름</label>
+	<input type="text" id="name" name="name"><br>
+	
+	<label for="tel">전화번호</label>
+	<input type="text" id="tel" name="tel"><br>
+	
+	<label for="area">고객의 의견</label>
+	<textarea rows="5"  cols="50" id="area" name="area"></textarea>
+	
+	<br>
+	<button>전송</button>
+	<!-- button은 타입이 생략되면 submit -->
+	<button type="button" onclick="check()">확인</button>
+	<button type="submit">전송</button>
+	<button type="reset">초기화</button>
+	
+	<br><br>
+
+<!-- 	타입이 없는 input은 그냥 텍스트 -->
+	<input type="button" value="확인" onclick="chect()">
+	<input type="submit">
+	<input type="reset">
+	<input type="image" src="../images/숲11.jpg" alt="숲11.jpg">
+
+</form>
+
+</body>
+</html>

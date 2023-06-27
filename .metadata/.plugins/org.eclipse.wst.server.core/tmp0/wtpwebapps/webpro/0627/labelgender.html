@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+label{
+	display : inline-block;
+	width : 100px;
+	height : 40px;
+}
+.lgend{
+	width : 40px;
+}
+.lfem{
+	margin-left : 50px;
+}
+</style>
+
+</head>
+<body>
+<form>
+	<label>이름</label>
+	<input type="text" name="name" id="name"><br>
+	
+	<label>주소</label>
+	<input type="text" name="addr" id="addr"><br>
+
+	<label>전화번호</label>
+	<input type="text" name="tel" id="tel"><br>
+	
+	<label>이메일</label>
+	<input type="text" name="email" id="email"><br>
+	
+	<label class="lgend">남자</label>
+	<input type="radio" name="gender" class="gender" value="남자">
+<!-- 	남자여자 name이 틀리면 각각 선택됨, name은 똑같아야함 & id가 똑같으면 warning이 발생할 수 있음 => class로 지정 -->
+	<label class="lgend lfem">여자</label>
+<!-- 	여자만 오른쪽으로 옮기기 위해 클래스가 두개, lgend일수도 있고 lfem일수도 있고 -->
+	<input type="radio" name="gender" class="gender" value="여자"><br>
+	
+	<br>
+	<br>
+	<input type="radio" name="gender2" class="gender2" value="남자">남자
+	<input type="radio" name="gender2" class="gender2" value="여자">여자
+	
+	
+</form>
+</body>
+</html>
