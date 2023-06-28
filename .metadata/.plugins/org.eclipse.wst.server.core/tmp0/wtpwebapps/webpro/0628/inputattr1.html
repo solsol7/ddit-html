@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="inputattr1.jsp" method="post">
+	<input type="text" name="id" value="a001" readonly="readonly"><br>
+<!-- 	readonly =>수정할 수 없음 -value값 있어야함 -->
+	<input title="홍길동" pattern="[가-힣]{2,5}" type="text" name="name" required placeholder="이름입력"><br>
+	<input type="password" placeholder="비밀번호입력" required="required" name="pass"><br>
+<!-- 	required ==>필수입력! -->
+	<input title="kkk123@korea.com" type="text" name="email" placeholder="이메일입력"><br>
+	<input type="text" name="tel" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" value="010-1234-5678" placeholder="전화번호입력"
+		title="010-1234-5678"><br>
+<!-- 	disabled => 사용불가능==> value값 있어야함, 서버로 값 전송안됨 -->
+	<br>
+	<input type="submit">
+</form>
+</body>
+</html>
+

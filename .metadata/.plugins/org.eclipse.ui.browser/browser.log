@@ -64,3 +64,6 @@
 6월 27, 2023 15:13:33.420 [8904:9968:0627/151333.420:ERROR:interface_endpoint_client.cc(697)] Message 1 rejected by interface blink.mojom.WidgetHost
 6월 27, 2023 18:14:06.855 [1340:11940:0627/181406.855:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
 6월 27, 2023 20:01:20.999 [1340:11940:0627/200120.999:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+6월 28, 2023 17:07:06.813 NEW SESSION
+6월 28, 2023 17:07:06.813 [6540:2396:0628/170706.812:ERROR:sharing_service.cc(252)] Device un-registration failed with fatal error

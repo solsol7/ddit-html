@@ -9,6 +9,17 @@ document.querySelector('#id명');
 
 3) name을 이용
 
+4) 태그 이름을 이용하는 방법
+	a[] = document.getElementsByTagName("태그이름") ==스크립트는 큰따옴표 작은따옴표 구분없음
+	 태그는 여러개가 동시에 겹칠 수 있어서 Element뒤에 s붙임
+	 결과 ==> 배열
+	
+	a = document.querySelector('태그이름')
+	 결과 ==>한개. 배열X
+	a[] = document.querySelectorAll('태그이름')
+	 전체 다 검색
+
+
 script에서 html요소의 값을 가져오기
 	value	-	input요소,  textarea, select
 	innerHTML - 가져오려고 하는 내용 속에 html태그가 포함된 경우

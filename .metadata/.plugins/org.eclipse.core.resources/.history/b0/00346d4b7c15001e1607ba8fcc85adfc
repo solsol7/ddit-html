@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="inputattr1.jsp" method="post">
+	<input title="홍길동" type="text" name="name" required placeholder="이름입력"><br>
+	<input type="password" placeholder="비밀번호입력" name="pass"><br>
+	<input title="kkk123@korea.com" type="text" name="email" placeholder="이메일입력"><br>
+	
+	
+	<br>
+	<input type="submit">
+</form>
+</body>
+</html>
+

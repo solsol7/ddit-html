@@ -1,6 +1,0 @@
-@charset "UTF-8";
-
-pre{
-	background-color : green;
-	font-size : 1.5rem;
-}
