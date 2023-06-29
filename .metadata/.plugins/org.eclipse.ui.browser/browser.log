@@ -67,3 +67,14 @@
 
 6월 28, 2023 17:07:06.813 NEW SESSION
 6월 28, 2023 17:07:06.813 [6540:2396:0628/170706.812:ERROR:sharing_service.cc(252)] Device un-registration failed with fatal error
+
+6월 29, 2023 15:16:32.111 NEW SESSION
+6월 29, 2023 15:16:32.111 [3544:2820:0629/151632.110:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+6월 29, 2023 15:16:32.138 ERROR: Couldn't read tbsCertificate as SEQUENCE
+6월 29, 2023 15:16:32.138 ERROR: Failed parsing Certificate
+6월 29, 2023 15:16:32.138 
+6월 29, 2023 15:16:32.139 [3544:2820:0629/151632.138:ERROR:cert_verify_proc_builtin.cc(702)] CertVerifyProcBuiltin for sync.hgrtb.com failed:
+6월 29, 2023 15:16:32.146 ----- Certificate i=0 (CN=sync.hgrtb.com) -----
+6월 29, 2023 15:16:32.146 ERROR: Time is after notAfter
+6월 29, 2023 15:16:32.147 
+6월 29, 2023 15:16:32.147 

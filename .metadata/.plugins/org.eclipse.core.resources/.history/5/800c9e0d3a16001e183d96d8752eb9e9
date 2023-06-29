@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+p{
+  font-size : 1.5rem;
+}
+</style>
+</head>
+<body>
+<p title="무궁화">무궁화 꽃이 피었습니다</p>
+<p class="p1">작약 꽃이 피었습니다</p>
+<p class="f1">봉선화 꽃이 피었습니다</p>
+
+<p title="수국" class="f2">수국 꽃이 피었습니다</p>
+<p id="pp">라일락 꽃이 피었습니다</p>
+
+</body>
+</html>
