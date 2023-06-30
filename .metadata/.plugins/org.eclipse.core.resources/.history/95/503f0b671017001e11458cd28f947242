@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+img{
+  width : 200px;
+  height : 200px;
+  
+  float : left;
+}
+p{
+  margin : 10px;
+  padding : 10px;
+}
+
+</style>
+</head>
+<body>
+<img src="../images/아메리카노.jpg" alt="아메리카노.jpg">
+<p>
+가장 기초가 되는 맛은 흔히 말하는 쓴맛이다. 물론 다양한 기호에 맞게 각국의 커피 맛이 어느 정도는 다르거니와 신맛을 포함해서 입 안에서 느껴지는 다른 맛과 향도 커피 평가에서 중요하지만, 쓴맛은 거의 기본이나 다름없다.
+현재 커피는 원산지인 에티오피아를 벗어나 세계 각지로 널리 퍼져나간 식물이 되었다. 그리고 품종부터 시작하여 각지의 토양과 기후에 따라 맛과 향이 다양화 되었다.
+커피를 마시면 느껴지는 각성효과를 가져오는 성분 카페인은 '커피에 있는 성분'이란 단어다.
+</p>
+<hr color="red">
+<img src="../images/에스프레소.jpg" alt="에스프레소.jpg">
+
+</body>
+</html>

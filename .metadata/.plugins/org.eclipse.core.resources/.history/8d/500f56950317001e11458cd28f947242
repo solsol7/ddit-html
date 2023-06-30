@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table{
+  border : 1px solid blue;
+  border-collapse: collapse;
+}
+td{
+  width : 300px;
+  height : 40px;
+  text-align: center;
+}
+caption{
+  border : 1px dotted green;
+  margin : 10px;
+  font-size : 1.5rem;
+}
+</style>
+</head>
+<body>
+<table border="1">
+  <caption>고객리스트</caption>	<!-- 테이블제목 -->
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+</table>
+</body>
+</html>
