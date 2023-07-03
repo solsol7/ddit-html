@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+  //id=result인 div요소를 검색
+  let vres = document.getElementById('result');
+  vres.innerHTML = "<h1>Hello</h1>";
+  vres.style.color = 'red';
+</script>
+<style>
+#result{
+  border : 1px dotted red;
+  width : 50%;
+  height : 50px;
+  margin : 20px;
+  padding : 20px;
+}
+</style>
+</head>
+<body>
+<!-- <input type="button" value="확인"> -->
+<div id="result"></div>
+</body>
+</html>
