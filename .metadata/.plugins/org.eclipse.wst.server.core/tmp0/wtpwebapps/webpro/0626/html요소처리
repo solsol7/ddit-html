@@ -22,7 +22,7 @@ document.querySelector('#id명');
 
 script에서 html요소의 값을 가져오기
 	value	-	input요소,  textarea, select
-	innerHTML - 가져오려고 하는 내용 속에 html태그가 포함된 경우
+	innerHTML - 가져오려고 하는 내용 속에 html태그가 포함된 경우(input, textarea, select 뺀 대부분의 것들...)
 	innerText - 가져오려고 하는 내용 속에 html태그가 포함되지 않은 경우
 
 

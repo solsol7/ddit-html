@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+div{
+	border : 1px solid orange;
+	margin : 10px;
+	display : inline-block;
+	width : 45%;
+	height : 100%;
+}
