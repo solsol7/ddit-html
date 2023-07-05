@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+proc1 = function(){
+	fruits = ["사과","바나나","복숭아","참외","수박"];
+	
+	document.getElementById("result1").innerHTML = fruits;
+	
+	str="";
+	
+	for(i=0; i<fruits.length; i++){
+		str += fruits[i]
+	}
+	
+	document.getElementById('result1').innerHTML += str;
+}
+
+proc2 = () =>{
+	fruits = [];
+	
+	fruits[0] = "자두";
+	fruits[1] = "파인애플";
+	fruits[2] = "망고";
+	fruits[3] = "두리안";
+	
+	document.getElementById('result2').innerHTML = fruits + "<br>";
+	
+	str="";
+	
+	for(i=0; i<fruits.length; i++){
+		str += fruits[i]
+	}
+	
+	document.getElementById('result2').innerHTML += str;
+}
+</script>
+</head>
+<body>
+<h3>fruits = ["사과","바나나","복숭아","참외","수박"]</h3>
+<input type="button" value="확인" onclick="proc1()">
+<div id="result1"></div>
+
+<br>
+<hr color="red">
+<h3>fruits = []</h3>
+<input type="button" value="확인" onclick="proc2()">
+<div id="result2"></div>
+
+
+</body>
+</html>
