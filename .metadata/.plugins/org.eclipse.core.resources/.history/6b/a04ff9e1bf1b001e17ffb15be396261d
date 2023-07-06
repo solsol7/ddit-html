@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+fieldset{
+	box-sizing : border-box;
+	width : 600px;
+	height : 400px;
+	padding : 50px;
+}
+label{
+	border : 1px solid red;
+	display : inline-block;
+	width : 150px;
+	height : 30px;
+}
+input{
+	width : 200px;
+}
+#dup{
+	width : 80px;
+}
+.gender{	
+	border : 1px solid red;
+	width : 10px;
+}
+#w{
+	margin-left : 50px;
+}

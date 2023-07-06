@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="../css/webShop.css">
 </head>
 <body>
+<div id="all">
 <header>
         <h1>
             <img src="../images/쇼핑백.jpg" alt="쇼핑백.jpg" id="shoppingBag">
@@ -46,20 +47,25 @@
 
 <aside id="right">
         <div id="shopcart">
-		  <p>Shopping Cart</p>
+		  <h3>Shopping Cart</h3>
+		  <p>
+			현재 쇼핑카트에 물품이 없습니다.<br>
+			<a href="" target="">쇼핑카트 보기</a>
+		  </p>
         </div>
 
         <div id="login">
             <h4>Log In</h4>
             <form action="#">
-              	아이디 <input type="text" name="id" id="id">
-              	패스워드 <input type="password" name="pass" id="pass">
+              	아이디 <input type="text" name="id" id="id"><br>
+              	패스워드 <input type="password" name="pass" id="pass"><br>
               	<input type="submit" value="로그인">
               	<input type="reset">
               	<a href="../html/회원가입.html">회원가입</a>
             </form>
         </div>
 </aside>
+</div>
 </div>
 </body>
 </html>

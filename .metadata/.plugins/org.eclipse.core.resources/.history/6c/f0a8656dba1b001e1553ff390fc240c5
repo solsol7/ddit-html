@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+legend{
+	padding : 30px;
+}
+label{
+	border : 1px solid red;
+	display : inline-block;
+	width : 150px;
+	height : 30px;
+}
+input{
+	width : 200px;
+}
+#dup{
+	width : 80px;
+}
+.gender{	
+	border : 1px solid red;
+	width : 10px;
+}
+#w{
+	margin-left : 50px;
+}

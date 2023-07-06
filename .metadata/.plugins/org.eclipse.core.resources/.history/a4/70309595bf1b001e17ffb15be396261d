@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#main{
+	padding : 10px;
+}
+fieldset{
+	width : 600px;
+	height : 400px;
+}
+label{
+	border : 1px solid red;
+	display : inline-block;
+	width : 150px;
+	height : 30px;
+}
+input{
+	width : 200px;
+}
+#dup{
+	width : 80px;
+}
+.gender{	
+	border : 1px solid red;
+	width : 10px;
+}
+#w{
+	margin-left : 50px;
+}

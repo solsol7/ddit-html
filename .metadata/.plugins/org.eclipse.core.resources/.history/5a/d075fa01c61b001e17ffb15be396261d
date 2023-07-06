@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+proc1 = () => {
+	sum=0;
+	str="";
+	
+	cont = true;
+	while(cont){
+		//su1입력
+		su1=parseInt(prompt("첫번째 수 입력"));
+		//su2입력
+		su2=parseInt(prompt("두번째 수 입력"));
+		//더하기 값 100이상이면 출력변수에 누적
+		if(su1+su2>=100){
+			str += su1 + " " + su2 + "<br>";
+		}
+		//계속할래? 안할래? - confirm();
+		cont=confirm("계속?");
+	}
+	//출력
+
+	//result1검색 - str
+	document.getElementById('result1').innerHTML = str;
+	
+}
+
+</script>
+</head>
+<body>
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div id="result1"></div>
+</body>
+</html>
