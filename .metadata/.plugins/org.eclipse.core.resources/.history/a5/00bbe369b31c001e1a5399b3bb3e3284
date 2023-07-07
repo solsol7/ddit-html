@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="http://localhost/webpro/css/style.css">
+<script>
+
+const arr= ["사과","바나나","복숭아","사과","참외","수박","사과"];
+//arr = new Array("사과","바나나","복숭아","사과","참외","수박","사과");
+//함수 밖에서 선언했기 때문에 전역객체, const이기 때문에 arr=arr2 이렇게 안됨
+
+function proc1(){
+	//idx = arr.indexOf("사과",1);
+	//idx = arr.lastIndexOf("자두");
+	
+	//alert(idx+"번째")
+	
+	//과일 이름 입력하기
+	input = prompt("과일 이름을 입력하세요");
+	
+	//입력한 과일 찾기
+	idx = arr.indexOf(input,1);
+	
+	//비교 하기 (있느냐 없느냐) 찾는 과일은 없습니다/ 몇번째에 있습니다
+	res = "찾는과일 : " + input +"<br>";
+	if(idx==-1){
+		res += "찾는 과일은 없습니다.";
+		document.getElementById('result1').innerHTML=res;
+	}else{
+		res += idx +"번 째에 있습니다.";
+		document.getElementById('result1').innerHTML=res;		
+	}
+}
+
+function proc2(){
+	
+	count = false;
+	idx = 0;
+	fruits = prompt("과일 이름을 입력하세요");
+	res = "찾는 과일 : "+fruits + "<br>";
+
+	while(true){
+		idx = arr.indexOf(fruits, idx);
+		if(idx == -1 && !count) {
+			res += "찾는 과일은 없습니다.";
+			document.getElementById('result2').innerHTML=res;
+			break;
+		}
+		if(idx == -1 && count) {
+			document.getElementById('result2').innerHTML=res;
+			break;
+		}
+		res += idx+"번째 "
+
+		idx=idx+1;
+		count = true;
+	}
+	
+	document.getElementById('result2').innerHTML=res;
+}
+
+proc3 = () => {
+	str = `원래 배열 : ${arr} <br>`;
+	
+	while(true){
+		input = prompt("추가할 배열 요소를 입력하세요.");
+		arr.push(input);
+		cont = confirm("계속하시겠습니까?");
+		if(!cont) break;
+	}
+//	arr.push(1,2,100,200, 10.5);
+	
+	str+= `추가 후 배열 : ${arr}`;
+	
+	document.getElementById('result3').innerHTML = str;
+	
+	
+	
+	
+	
+}
+
+</script>
+</head>
+<body>
+<h3>const arr= ["사과","바나나","복숭아","사과","참외","수박","사과"];<br>
+ 사과 찾기, 입력한 과일 찾기, 뒤에서부터 검색하여 찾기</h3>
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div class="ddres" id="result1"></div>
+<br>
+<hr color="red">
+
+<h3>const arr= ["사과","바나나","복숭아","사과","참외","수박","사과"];<br>
+같은 과일 이름 찾기</h3>
+<input type="button" value="확인" onclick="proc2()">
+<br>
+<div class="ddres" id="result2"></div>
+<br>
+<hr color="red">
+
+<h3>const arr= ["사과","바나나","복숭아","사과","참외","수박","사과"];<br>
+배열에 요소 추가/삭제</h3>
+<input type="button" value="push" onclick="proc3()">
+<input type="button" value="pop" onclick="proc4()">
+<br>
+<div class="ddres" id="result3"></div>
+<div class="ddres" id="result4"></div>
+<br>
+<hr color="red">
+</body>
+</html>

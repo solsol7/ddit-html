@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/prod.css">
+</head>
+<body>
+<div>
+<img src="../images/컴퓨터1.webp" alt="쇼핑백3.jpg" class="comImg">
+<br>
+  <div class="comInfo">
+  인텔 / 코어i7-13세대 / 랩터레이크 / i7-13700T (1.4GHz) / DDR4 / 16GB / M.2 / 512GB /
+  지포스 RTX 3050 / 4GB / 스피커 내장형 / 1Gbps 유선 / 802.11ac(Wi-Fi 5) 무선 / 블루투스 /
+  HDMI / USB 3.0(5Gbps) / USB Type-C 3.0(5Gbps) / 웹캠 / 마이크 내장 / 외장 어댑터 / 윈도우11 프로 /
+  일체형 / 8.3kg / 화면크기: 68cm(27인치) / 2560x1440 / 광시야각 / 용도: 게임용 / B&O 스피커
+  </div>
+ 
+  <input type="button" value="쇼핑카트에 추가하기">
+</div>
+
+<div>
+<img src="../images/컴퓨터2.avif" alt="쇼핑백3.jpg" class="comImg">
+<br>
+  <div class="comInfo">
+  인텔 / 코어i7-13세대 / 랩터레이크 / i7-13700T (1.4GHz) / DDR4 / 16GB / M.2 / 512GB /
+  지포스 RTX 3050 / 4GB / 스피커 내장형 / 1Gbps 유선 / 802.11ac(Wi-Fi 5) 무선 / 블루투스 /
+  HDMI / USB 3.0(5Gbps) / USB Type-C 3.0(5Gbps) / 웹캠 / 마이크 내장 / 외장 어댑터 / 윈도우11 프로 /
+  일체형 / 8.3kg / 화면크기: 68cm(27인치) / 2560x1440 / 광시야각 / 용도: 게임용 / B&O 스피커
+  </div>
+ 
+  <input type="button" value="쇼핑카트에 추가하기">
+</div>
+
+<div>
+<img src="../images/컴퓨터3.avif" alt="쇼핑백3.jpg" class="comImg">
+<br>
+  <div class="comInfo">
+  인텔 / 코어i7-13세대 / 랩터레이크 / i7-13700T (1.4GHz) / DDR4 / 16GB / M.2 / 512GB /
+  지포스 RTX 3050 / 4GB / 스피커 내장형 / 1Gbps 유선 / 802.11ac(Wi-Fi 5) 무선 / 블루투스 /
+  HDMI / USB 3.0(5Gbps) / USB Type-C 3.0(5Gbps) / 웹캠 / 마이크 내장 / 외장 어댑터 / 윈도우11 프로 /
+  일체형 / 8.3kg / 화면크기: 68cm(27인치) / 2560x1440 / 광시야각 / 용도: 게임용 / B&O 스피커
+  </div>
+  
+  <input type="button" value="쇼핑카트에 추가하기">
+</div>
+ 
+
+</body>
+</html>

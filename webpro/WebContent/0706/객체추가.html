@@ -6,10 +6,30 @@
 <script>
 const rect = { };
 
-proc = () => {
+proc1 = () => {
+	//속성추가
 	rect.width = 8;
 	rect.height =5;
+	rect.name = "네모";
+	
+	//메소드 추가
+	rect.getArea = function(){
+		return this.width * this.height
+	}
+	
+	//출력
+	rectPrint("result1");
 }
+
+rectPrint = function(result){
+	str = `이름 : ${rect.name}<br>`;
+	str += `가로 : ${rect.width} <br>`;
+	str += `세로 : ${rect.height} <br>`;
+	str += `면적 : ${rect.getArea()} <br>`;
+	
+	document.getElementById(result).innerHTML = str;
+}
+
 </script>
 </head>
 <body>

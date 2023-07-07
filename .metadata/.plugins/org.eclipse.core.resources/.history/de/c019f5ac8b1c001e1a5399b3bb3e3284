@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+function Rect(width, height){
+	this.width = width;
+	this.height = height;
+	
+	this.getArea = fuction(){
+		return this.width * this.height;
+	}
+	
+	this.getCircum = function(){
+		return (this.width + this.height) *2;
+	}
+}
+
+function proc1(){
+	rect = new Rect(4,7);
+	
+	rectPrint(rect, '#result');
+}
+rectPrint(result){
+	str = `가로 : ${rect.width} <br>`;
+	str+=` 세로 : ${rect.height} <br>`;
+	str+=`면적  : ${rect.getArea()} <br>`;
+	str+=`둘레 : ${rect.getCircum()} <br>`;
+	
+	document.getElementById(result).innerHTML = str;
+}
+</script>
+</head>
+<body>
+<h3>생성된 rect객체의 정보를 출력</h3>
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div id="result1"></div>
+<br>
+<hr color='red'>
+</body>
+</html>
