@@ -75,9 +75,17 @@ proc3 = () => {
 	
 	document.getElementById('result3').innerHTML = str;
 	
+}
+proc4 = () =>{
+	str =`원래배열 : ${arr} <br>`;
 	
+	vpop = arr.pop();
 	
+	str += `꺼낸값 : ${vpop} <br>`;
 	
+	str += `꺼낸 후 배열 : ${arr} <br>`;
+
+	document.getElementById('result4').innerHTML = str;
 	
 }
 

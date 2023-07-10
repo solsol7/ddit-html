@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>
+proc1 = () => {
+	today1 = new Date();
+	today2 = new Date(100000);
+	today3 = new Date("1999.3.5");
+	today4 = new Date(1999, 3, 5);
+	
+	str = `${today1} <br>`;
+	str += `${today2} <br>`;
+	str += `${today3} <br>`;
+	str += `${today4} <br>`;
+}
+</script>
+</head>
+<body>
+
+<h3></h3>
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div class="ddres" id="result1"></div>
+<br>
+<hr color="red">
+</body>
+</html>

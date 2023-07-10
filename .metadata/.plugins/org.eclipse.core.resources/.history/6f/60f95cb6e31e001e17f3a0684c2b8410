@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>
+const arr= ["사과","바나나","복숭아","사과","참외","수박","사과"];
+
+proc1 = () => {
+	varr = arr.slice(0,4);
+	
+	str = `원래배열 : ${arr} <br>`;
+	str += `arr.slice(0,4) : ${varr} <br>`
+	
+	str += `slice 후 배열 : ${arr} <br>`;
+	
+	document.getElementById('result1').innerHTML = str;
+}
+
+proc2 = () => {
+	
+		//사과와 사과 사이의 리스트 추출
+}
+</script>
+</head>
+<body>
+
+<h3></h3>
+<input type="button" value="slice" onclick="proc1()">
+<input type="button" value="slice" onclick="proc2()">
+<br>
+<div class="ddres" id="result1"></div>
+<div class="ddres" id="result2"></div>
+<br>
+<hr color="red">
+</body>
+</html>

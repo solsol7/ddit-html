@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>
+const arr= ["사과","바나나","복숭아","사과","참외","수박","사과"];
+
+proc1 = () => {
+	arr.slice(0,4);
+	
+	srt = `원래배열 : ${arr} <br>`;
+	str += `arr.slice(0,4) : ${varr} <br>`
+	
+	str += `slice 후 배열 : ${arr} <br>`;
+	
+	document.getElementById('result1').innerHTML = str;
+}
+</script>
+</head>
+<body>
+
+<h3></h3>
+<input type="button" value="slice" onclick="proc1()">
+<br>
+<div class="ddres" id="result1"></div>
+<br>
+<hr color="red">
+</body>
+</html>
