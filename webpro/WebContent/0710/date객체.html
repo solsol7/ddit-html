@@ -79,6 +79,18 @@ proc3 = () => {
 	
 	document.querySelector("#result3").innerHTML = str;
 }
+proc4 = () => {
+	days = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
+	
+	day = today1.getDay();
+	
+	res = days[day];
+	
+	today = today1.toLocaleString();
+	
+	str = `오늘은 ${today1} ${res} 입니다 <br>`;
+	document.querySelector("#result4").innerHTML = str;
+}
 </script>
 </head>
 <body>
@@ -93,7 +105,8 @@ proc3 = () => {
 <hr color="red">
 
 <h3>getDay() : 결과값 0 ~ 6 <br>
-0 : 일요일 ~ 6 : 토요일		-if, switch문 이용해서 변환하기
+0 : 일요일 ~ 6 : 토요일		-if, switch문 이용해서 변환하기<br>
+배열이용
 </h3>
 <input type="button" value="확인" onclick="proc3()">
 <input type="button" value="확인" onclick="proc4()">
@@ -102,5 +115,7 @@ proc3 = () => {
 <div class="ddres" id="result4"></div>
 <br>
 <hr color="red">
+
+
 </body>
 </html>
