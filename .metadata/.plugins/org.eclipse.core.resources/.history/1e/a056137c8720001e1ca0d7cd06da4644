@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h3>setTimeout : 정해진 시간이 경과 후 한번 실행 후 종료</h3>
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div class="ddres" id="result1"></div>
+<br>
+<hr color="red">
+
+<h3>SetInterval : 정해진 시간이 경과할 때마다 계속 실행한다<br>
+종료하기 위해서 clearInterval()메소드가 필요하다</h3>
+<input type="button" value="확인" onclick="proc2()">
+<br>
+<div class="ddres" id="result2"></div>
+<br>
+<hr color="red">
+</body>
+</html>

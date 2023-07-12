@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>
+
+var rand = Math.random() * 100 + 1 ;  //1~100까지
+function proc1(){
+   
+   
+   //입력한 값 가져오기 - insu를 검색 - 값가져오기
+   invalue = document.getElementById('insu').value;
+   
+
+   if(rand == invalue){
+      res = "정답입니다.";
+      str=`랜덤 : ${rand} <br>`;
+      str += res;
+      
+   }else if(rand > invalue){
+      str = "더 큰수를 입력하세요.";
+   }else if(rand < invalue){
+      str = "작은수 입를 입력하세요.";
+   
+      
+
+   document.getElementById('result1').innerHTML = str;
+   
+}
+
+</script>
+
+
+</head>
+<body>
+
+<h3></h3>
+
+
+<p>1~100사이 숫자 입력</p>
+<input type= "text" id = "insu">
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div class="ddres" id="result1"></div>
+
+<Br>
+<hr color ="red">
+</body>
+</html>

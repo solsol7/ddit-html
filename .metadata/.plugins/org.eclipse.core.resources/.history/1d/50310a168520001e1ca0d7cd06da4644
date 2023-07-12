@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>
+proc1 = () => {
+	window.open('../0710/date객체.html','_self');
+	window.open('../0710/date객체.html','_새로운 창열기');  /* 이름붙인건데 안보임 , 논리적이름*/
+	window.open('../0710/date객체.html','_새로운 창열기', "width=500 height=400 top=200 left=300");
+	
+	
+}
+</script>
+</head>
+<body>
+
+<h3></h3>
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div class="ddres" id="result1"></div>
+<br>
+<hr color="red">
+</body>
+</html>
