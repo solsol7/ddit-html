@@ -173,3 +173,6 @@
 
 7월 11, 2023 15:21:22.10 NEW SESSION
 7월 11, 2023 15:21:22.10 [10912:3300:0711/152122.009:ERROR:gpu_process_host.cc(953)] GPU process exited unexpectedly: exit_code=34
+
+7월 13, 2023 15:55:47.735 NEW SESSION
+7월 13, 2023 15:55:47.735 [13892:11768:0713/155547.734:ERROR:interface_endpoint_client.cc(697)] Message 1 rejected by interface blink.mojom.WidgetHost

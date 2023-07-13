@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>
+proc1 = () => {
+	//첫번째 ul요소를 검색
+	vul = document.querySelector('ul');
+// 	vul = document.getElementsTagName('ul')[0];
+	
+	//li요소를 검색
+	lilist = vul.getElementsByTagName('li');
+// 	lilist = vul.querySelectorAll('li');
+	
+	str="";
+	
+	for(i=0; i<lilist.length; i++){
+		//console.log(lilist[i].firstChild)
+		//alert(lilist[i].firstChild.data)
+		str += lilist[i].firstChild.data + "<br>";
+	}
+	
+	document.getElementById('result1').innerHTML = str;
+	
+}
+addText= () => {
+	vtext = "안녕하세요";
+	
+	textNode = document.createTextNode(vtext);
+	
+	//부모.appendChild(자식)
+	document.getElementById('result').appendChild(textNode);
+}
+
+proc2 = () => {
+// 	vul2.querySelectorAll('li');
+	vul2 = document.getElementsByTagName('ul');
+	//vul2[1].querySelectorAll('li')
+	
+	//vul2 = document.querySelectorAll('ul');		//전체가 나옴
+	//vul2[1]	//그 중에 1번째
+	vlist = vul2[1].querySelectorAll('li');
+	
+	for(i=0; i<vlist.length; i++){
+		vstr = vlist[i].firstChild.data;
+		
+		vimg = document.createElement('img');
+		vimg.src="../images/" + vstr + ".jpg";
+		vimg.alt=vstr;
+		
+		vlist[i].appendChild(vimg);
+	}
+}
+proc3 = (vli) => {
+	
+	//vli : 호출시 클릭한 li객체를 받는 변수
+	
+	//클릭한 li에서 문자를 가져온다
+	vstr = vli.firstChild.data;
+	
+	//img객체를 생성
+	vimg = document.createElement('img');
+	vimg.src = "../images/"+vstr +".jpg";
+	vimg.alt = vstr;
+}
+</script>
+
+<style>
+img{
+  width : 50px;
+  height : 50px;
+}
+</style>
+</head>
+<body>
+
+<h3></h3>
+   <ul>
+       <li>List item 1</li>
+       <li>List item 2</li>
+       <li>List item 3</li>
+       <li>List item 4</li>
+       <li>List item 5</li>
+   </ul>
+
+<input type="button" value="확인" onclick="proc1()">
+<br>
+<div class="ddres" id="result1"></div>
+<br>
+<hr color="red">
+
+<h3>버튼 클릭하면 문자열 생성해서 result에 추가한다<br></h3>
+<input type = "button" value="추가" onclick="addText()">
+<br>
+<div id="result" class="ddres"></div>
+<hr color="red">
+
+<h3>li의 문자열을 추출<br>
+해당 문자열로 이미지객체를 생성 - createElement('img')<br>
+이미지 객체를 해당 li요소에 추가</h3>
+   <ul>
+       <li>Penguins</li>
+       <li>Tulips</li>
+       <li>대나무숲</li>
+       <li>사막</li>
+       <li>cloud03</li>
+   </ul>
+
+<input type="button" value="확인" onclick="proc2()">
+<br>
+<hr color="red">
+
+<h3>li의 문자열을 추출<br>
+li를 클릭하면 해당 문자열로 이미지객체를 생성 - createElement('img')<br>
+이미지 객체를 해당 li요소에 추가</h3>
+<ul>
+       <li onclick="proc3(this)">Penguins</li>
+       <li onclick="proc3(this)">Tulips</li>
+       <li onclick="proc3(this)">대나무숲</li>
+       <li onclick="proc3(this)">사막</li>
+       <li onclick="proc3(this)">cloud03</li>
+</ul>
+<br>
+<hr color="red">
+</body>
+</html>
