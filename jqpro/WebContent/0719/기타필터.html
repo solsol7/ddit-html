@@ -12,6 +12,14 @@ $(function(){
 		$('#result1 p:hidden').each(function(){
 			str += $(this).text() + "<br>";
 		})
+		$('#res1').html(str);
+	})
+
+	$('#btn2').on('click',function(){
+		str = "";
+		$('#result1 p:visible').each(function(){
+			str += $(this).text() + "<br>";
+		})
 		$('#res2').html(str);
 	})
 })

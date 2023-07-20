@@ -25,7 +25,6 @@ INDEX VERSION 1.131+D:\A_TeachingMaterial\JQuery\.metadata\.plugins\org.eclipse.
 2066830214.index
 1956904976.index
 83831823.index
-1177240956.index
 1585106647.index
 2407037192.index
 1961815414.index
