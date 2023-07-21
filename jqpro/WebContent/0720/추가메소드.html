@@ -7,6 +7,7 @@
 <script src="../js/jquery-3.7.0.min.js"></script>
 <script>
 $(function(){
+	/*
 	$('#p4').on('click', function(){
 		//타이틀 속성 가져오기
 		vtitle = $(this).attr('title');
@@ -64,6 +65,33 @@ $(function(){
 		
 		$(this).append(vimg);
 	})
+	*/
+	$('p').on('click', function(){
+		vtitle = $(this).attr('title');
+		vmethod = $(this).prev().text();
+		
+		//이미지 만들기
+		vimg = $("<img>",{ 
+			'src' : '../images/'+vtitle,
+			'alt' : vtitle
+		})
+		
+		//이미지 추가하기
+		switch(vmethod){
+		case "append" :
+			$(this).append(vimg);
+			break;
+		case "prepend" : 
+			$(this).prepend(vimg);
+			break;
+		case "after" : 
+			$(this).after(vimg);
+			break;
+		default : 
+			$(this).before(vimg);
+			break;
+		}
+		})
 })
 </script>
 <style>
