@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-3.7.0.min.js"></script>
+<script>
+$(function(){
+	$('#btn1').on('click',function(){
+		
+		//현재의 상태값을 가져오기
+		vcheck = $('#checkTest').prop('checked');
+		vsel = $('#selTest option:eq(2)').prop('selected');
+		vtxt = $('#txtTest').prop('readonly');
+		vbtn = $('#runBtn').prop('disabled');
+		
+		console.log(vcheck, vsel, vtxt, vbtn);
+		
+		//상태값 변경하기
+		$('#checkTest').prop('checked', !vcheck);
+		$('#selTest option:eq(2)').prop('selected', !vsel);
+		$('#txtTest').prop('readonly', !vtxt);
+		$('#runBtn').prop('disabled', !vbtn);
+		
+		/*
+		if(vcheck) $('#checkTest').prop('checked',false)
+		else $('#checkTest').prop('checked',true)
+		
+		if(vsel) $('#selTest option:eq(2)').prop('selected',false)
+		else $('#selTest option:eq(2)').prop('selected',true)
+		
+		if(vtxt) $('#txtTest').prop('readonly',false)
+		else $('#txtTest').prop('readonly',true)
+		
+		if(vbtn) $('#runBtn').prop('disabled',false)
+		else $('#runBtn').prop('disabled',true)
+		*/
+		
+		
+	})
+	
+	$('#checkAll').on('change',function(){
+		vcheck2 = $(this).prop('checked')
+		
+		$('.num').prop('checked',vcheck2)
+	})
+	
+})
+</script>
+</head>
+<body>
+
+<h3></h3>
+<input type="button" value="확인" id="btn1">
+<br>
+<div class="ddres" id="result1">
+
+	<form>
+	체크박스(라디오버튼) :    <input type="checkbox" id="checkTest"  checked><br><br>
+	
+	리스트박스(select객체) : 
+	 <select id="selTest">
+	     <option value="1">하나</option> 
+	     <option value="2">둘</option>
+	     <option value="3" selected >셋</option> 
+	     <option value="4">넷</option>
+	 </select><br><br>
+	
+	 text객체	(readonly) : <input type="text" value="가나다" id="txtTest"><br><br>
+	
+	 button객체(disabled) : 
+	       <input type="button" value="실행" id="runBtn" onclick="alert('hello~')">
+	</form>
+
+
+</div>
+<br>
+<hr color="red">
+
+<div class="ddres" id="result2">
+	<form>
+		체크박스(전체선택/해제)<br>
+		<input type="checkbox" id="checkAll"  checked>전체선택
+		<input type="checkbox" class="num"  checked>1
+		<input type="checkbox" class="num"  checked>2
+		<input type="checkbox" class="num"  checked>3
+		<input type="checkbox" class="num"  checked>4
+		<input type="checkbox" class="num"  checked>5
+		
+</div>
+
+<br>
+<hr color="red">
+</body>
+</html>

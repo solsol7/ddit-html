@@ -21,8 +21,23 @@ $(function(){
 		
 	})
 	
-	$()
+	$('#nextall').on('click',function(){
+		$('#result1 li.start').nextAll().css({'color':'green', 'border':'1px solid red'})
+		
+	})
 	
+	$('#nextun').on('click',function(){
+		$('#result1 li.start').nextUntil('.stop').css({'color':'pink', 'border':'1px solid red'})
+		
+	})
+	
+	$('#prev').on('click',function(){
+		$('#result2 li.start').prev().css({'color' : 'red', 'border':'1px solid red'})
+	})
+
+	$('#siblings').on('click',function(){
+		$('#result3 li.start').siblings().css({'color' : 'red', 'border':'1px solid red'})
+	})
 	
 })
 </script>
@@ -42,7 +57,7 @@ $(function(){
 	    <li>li (sibling)</li>
 	    <li class="start">li (sibling with class name "start")</li>
 	    <li>li (the next sibling of li with class name "start")</li>
-	    <li>li (sibling)</li>
+	    <li class="stop">li (sibling)</li>
 	  </ul>   
 	</div>
 
@@ -51,8 +66,46 @@ $(function(){
 <hr color="red">
 
 <!-- prev -->
+<h3></h3>
+<input type="button" value="prev" id="prev">
+<br>
+<div class="ddres" id="result2">
+
+	<div style="width:500px;" class="siblings">
+	  <ul>ul (parent)  
+	    <li>li (sibling)</li>
+	    <li>li (sibling)</li>
+	    <li class="start">li (sibling with class name "start")</li>
+	    <li>li (the next sibling of li with class name "start")</li>
+	    <li>li (sibling)</li>
+	  </ul>   
+	</div>
+
+</div>
+<br>
+<hr color="red">
+
 
 <!-- siblings 만들기... -->
+<h3></h3>
+<input type="button" value="siblings" id="siblings">
+<br>
+<div class="ddres" id="result3">
+
+	<div style="width:500px;" class="siblings">
+	  <ul>ul (parent)  
+	    <li>li (sibling)</li>
+	    <li>li (sibling)</li>
+	    <li class="start">li (sibling with class name "start")</li>
+	    <li>li (the next sibling of li with class name "start")</li>
+	    <li>li (sibling)</li>
+	  </ul>   
+	</div>
+
+</div>
+<br>
+<hr color="red">
+
 
 </body>
 </html>
