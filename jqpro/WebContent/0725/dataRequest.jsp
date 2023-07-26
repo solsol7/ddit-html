@@ -86,6 +86,34 @@ function jsonObjPro(){
 }
 
 function joarrPro(){
+	//요청
+	xhr.open("get", "joArrData.jsp",true);
+	xhr.send();
+	
+	//응답
+	xhr.onreadystatechange = function(){
+		if(this.readyState==4 && this.status==200){
+			res = this.responseText;
+			
+			pares = JSON.parse(res);
+			
+			code = "";
+			
+			$.each(pares,function(i, v){
+				//pares[i].name //v.name this.name
+				//pares[i].id	//v.id this.id
+				
+				code += (i+1) + "번째 고객 정보 ****<br>"
+				code += "이름 : " + v.name + "<br>";
+				code += "아이디 : " + v.id + "<br>";
+				code += "주소 : " + v.addr + "<br>";
+				code += "전화번호 : " + v.tel + "<br><br>";
+			})
+			
+			$('#result4').html(code);
+			
+		}
+	}
 	
 }
 </script>
