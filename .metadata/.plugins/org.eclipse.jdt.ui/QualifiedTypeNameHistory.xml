@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="member.vo.MemberVO"/>
+<fullyQualifiedTypeName name="member.dao.IMemberDao"/>
+<fullyQualifiedTypeName name="member.service.IMemberService"/>
+<fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
+<fullyQualifiedTypeName name="member.dao.MemberDaoImpl"/>
+</qualifiedTypeNameHistroy>
