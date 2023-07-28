@@ -20,6 +20,7 @@
 <!-- 		<typeAlias type="클래스의 전체 경로" alias="별칭"/> -->
 		<typeAlias type="member.vo.MemberVO" alias="memVo"/>
 		<typeAlias type="lprod.vo.LprodVO" alias="lprodVo"/>
+		<typeAlias type="buyer.vo.BuyerVO" alias="buyerVo"/>
 	</typeAliases>
 	
 	 
@@ -49,5 +50,6 @@
 	 <mappers>
 	   <mapper resource="mybatis/mapper/member-mapper.xml"/>
 	   <mapper resource="mybatis/mapper/lprod-mapper.xml"/>
+	   <mapper resource="mybatis/mapper/buyer-mapper.xml"/>
 	 </mappers>
 </configuration>

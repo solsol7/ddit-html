@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="member.vo.MemberVO"/>
 <fullyQualifiedTypeName name="member.dao.IMemberDao"/>
+<fullyQualifiedTypeName name="member.dao.MemberDaoImpl"/>
+<fullyQualifiedTypeName name="kr.or.ddit.vo.BoardVO"/>
+<fullyQualifiedTypeName name="kr.or.ddit.board.service.BoardServiceImpl"/>
+<fullyQualifiedTypeName name="kr.or.ddit.util.MybatisUtil"/>
 <fullyQualifiedTypeName name="member.service.IMemberService"/>
 <fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
-<fullyQualifiedTypeName name="member.dao.MemberDaoImpl"/>
+<fullyQualifiedTypeName name="member.vo.MemberVO"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
+<fullyQualifiedTypeName name="buyer.dao.IBuyerDao"/>
+<fullyQualifiedTypeName name="buyer.dao.BuyerDaoImpl"/>
+<fullyQualifiedTypeName name="buyer.service.BuyerServiceimpl"/>
+<fullyQualifiedTypeName name="buyer.service.IBuyerService"/>
+<fullyQualifiedTypeName name="buyer.service.BuyerServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="buyer.vo.BuyerVO"/>
 </qualifiedTypeNameHistroy>
