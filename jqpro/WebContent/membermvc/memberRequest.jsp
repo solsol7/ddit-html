@@ -25,10 +25,10 @@ $(function(){
 				code += "<td>이메일</td></tr>";
 				
 				$.each(res, function(i, v){
-				code += "<tr><td>" +v.mem_id +"</td>";
-				code += "<td>" +res[i].mem_name +"</td>";
-				code += "<td>" +this.mem_hp +"</td>";
-				code += "<td>" +res[i].mem_mail +"</td></tr>";
+					code += "<tr><td>" +v.mem_id +"</td>";
+					code += "<td>" +res[i].mem_name +"</td>";
+					code += "<td>" +this.mem_hp +"</td>";
+					code += "<td>" +res[i].mem_mail +"</td></tr>";
 					
 				})
 				

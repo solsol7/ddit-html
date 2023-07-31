@@ -32,9 +32,11 @@ function proc1(){
 }//proc1 끝
 
 $(function(){
+	
+	//새롭게 생성된 p태그 클릭 이벤트
 	$(document).on('click','p', function(){
 		vattr = $(this).attr('class');
- 		alert(vattr);
+ 		//alert(vattr);
 
 		$.ajax({
 			url : "<%=request.getContextPath()%>/buyerDetail.do",
@@ -42,7 +44,51 @@ $(function(){
 			type : 'get',
 			dataType : 'json',
 			success : function(res){
+				code = `<table border="1">
+						<tr>
+							<td>BUYER_ID</td>
+							<td>${res.buyer_id}</td>
+						</tr>
+						<tr>
+							<td>BUYER_NAME</td>
+							<td>${res.buyer_name}</td>
+						</tr>
+						<tr>
+							<td>BUYER_MAIL</td>
+							<td>${res.buyer_mail}</td>
+						</tr>
+						<tr>
+							<td>BUYER_BANK</td>
+							<td>${res.buyer_bank}</td>
+						</tr>
+						<tr>
+							<td>BUYER_BNO</td>
+							<td>${res.buyer_bankno}</td>
+						</tr>
+						<tr>
+							<td>BUYER_BNAME</td>
+							<td>${res.buyer_bankname}</td>
+						</tr>
+						<tr>
+							<td>BUYER_ZIP</td>
+							<td>${res.buyer_zip}</td>
+						</tr>
+						<tr>
+							<td>BUYER_ADD1</td>
+							<td>${res.buyer_add1}</td>
+						</tr>
+						<tr>
+							<td>BUYER_ADD2</td>
+							<td>${res.buyer_add2}</td>
+						</tr>
+						<tr>
+							<td>BUYER_LGU</td>
+							<td>${res.buyer_lgu}</td>
+						</tr>
+						</table>
+				`;
 				
+				$('#detail').html(code);
 			},
 			error : function(xhr){
 				alert("상태 : " + xhr.status)

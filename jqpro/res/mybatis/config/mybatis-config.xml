@@ -21,6 +21,7 @@
 		<typeAlias type="member.vo.MemberVO" alias="memVo"/>
 		<typeAlias type="lprod.vo.LprodVO" alias="lprodVo"/>
 		<typeAlias type="buyer.vo.BuyerVO" alias="buyerVo"/>
+		<typeAlias type="prod.vo.ProdVO" alias="prodVo"/>
 	</typeAliases>
 	
 	 
@@ -51,5 +52,6 @@
 	   <mapper resource="mybatis/mapper/member-mapper.xml"/>
 	   <mapper resource="mybatis/mapper/lprod-mapper.xml"/>
 	   <mapper resource="mybatis/mapper/buyer-mapper.xml"/>
+	   <mapper resource="mybatis/mapper/prod-mapper.xml"/>
 	 </mappers>
 </configuration>

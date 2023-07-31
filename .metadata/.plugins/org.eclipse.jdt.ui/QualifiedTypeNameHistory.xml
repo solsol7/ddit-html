@@ -9,13 +9,23 @@
 <fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
 <fullyQualifiedTypeName name="member.vo.MemberVO"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
 <fullyQualifiedTypeName name="buyer.dao.IBuyerDao"/>
 <fullyQualifiedTypeName name="buyer.dao.BuyerDaoImpl"/>
 <fullyQualifiedTypeName name="buyer.service.BuyerServiceimpl"/>
 <fullyQualifiedTypeName name="buyer.service.IBuyerService"/>
 <fullyQualifiedTypeName name="buyer.service.BuyerServiceImpl"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="buyer.vo.BuyerVO"/>
+<fullyQualifiedTypeName name="lprod.dao.ILprodDao"/>
+<fullyQualifiedTypeName name="lprod.dao.LprodDaoImpl"/>
+<fullyQualifiedTypeName name="lprod.service.ILprodService"/>
+<fullyQualifiedTypeName name="lprod.service.LprodServiceImpl"/>
+<fullyQualifiedTypeName name="lprod.vo.LprodVO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="prod.vo.ProdVO"/>
+<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
+<fullyQualifiedTypeName name="prod.dao.IProdDao"/>
+<fullyQualifiedTypeName name="prod.dao.ProdDaoImpl"/>
+<fullyQualifiedTypeName name="prod.service.IProdService"/>
+<fullyQualifiedTypeName name="prod.service.ProdServiceImpl"/>
 </qualifiedTypeNameHistroy>
