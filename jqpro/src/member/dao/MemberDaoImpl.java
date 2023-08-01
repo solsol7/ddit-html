@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 
 import member.vo.MemberVO;
+import member.vo.ZipVO;
 import mybatis.config.MybatisUtil;
 
 public class MemberDaoImpl implements IMemberDao{
@@ -38,6 +39,24 @@ public class MemberDaoImpl implements IMemberDao{
 		}
 		
 		return list;
+	}
+
+	@Override
+	public String selectById(String mid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insertMember(MemberVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<ZipVO> selectByDong(String dong) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
