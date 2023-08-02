@@ -10,5 +10,19 @@
 	select * from member
 </select>
 
+<select id="selectById" parameterType="String" resultType="String">
+	select mem_id from member where mem_id=#{data}
+</select>
+
+<select id="insertMember" parameterType="memVo">
+	insert into member(mem_id, mem_pass, mem_name, mem_bir, mem_zip,
+						mem_add1, mem_add2, mem_hp, mem_mail)
+	values(#{mem_id}, #{mem_pass}, #{mem_name}, #{mem_bir}, #{mem_zip},
+			#{mem_add1}, #{mem_add2}, #{mem_hp}, #{mem_mail})
+</select>
+
+<select id="selectByDong" parameterType="String" resultType="zipVo">
+	select * from ziptb where dong like #{data}||'%'
+</select>
 
 </mapper>

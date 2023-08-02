@@ -21,29 +21,24 @@ public class MemberServiceImpl implements IMemberService {
 	IMemberDao dao = MemberDaoImpl.getInstance();
 	
 	
-	
 	@Override
 	public List<MemberVO> getAllMember() {
-		// TODO Auto-generated method stub
 		return dao.getAllMember();
 	}
 
 	@Override
 	public String selectById(String mid) {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.selectById(mid);
 	}
 
 	@Override
 	public int insertMember(MemberVO vo) {
-		// TODO Auto-generated method stub
-		return 0;
+		return dao.insertMember(vo);
 	}
 
 	@Override
 	public List<ZipVO> selectByDong(String dong) {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.selectByDong(dong);
 	}
 
 }

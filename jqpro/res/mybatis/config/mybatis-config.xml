@@ -22,6 +22,7 @@
 		<typeAlias type="lprod.vo.LprodVO" alias="lprodVo"/>
 		<typeAlias type="buyer.vo.BuyerVO" alias="buyerVo"/>
 		<typeAlias type="prod.vo.ProdVO" alias="prodVo"/>
+		<typeAlias type="member.vo.ZipVO" alias="zipVo"/>
 	</typeAliases>
 	
 	 

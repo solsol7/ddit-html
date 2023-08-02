@@ -5,8 +5,6 @@
 <fullyQualifiedTypeName name="kr.or.ddit.vo.BoardVO"/>
 <fullyQualifiedTypeName name="kr.or.ddit.board.service.BoardServiceImpl"/>
 <fullyQualifiedTypeName name="kr.or.ddit.util.MybatisUtil"/>
-<fullyQualifiedTypeName name="member.service.IMemberService"/>
-<fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="buyer.dao.IBuyerDao"/>
 <fullyQualifiedTypeName name="buyer.dao.BuyerDaoImpl"/>
@@ -20,13 +18,15 @@
 <fullyQualifiedTypeName name="lprod.service.LprodServiceImpl"/>
 <fullyQualifiedTypeName name="lprod.vo.LprodVO"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
 <fullyQualifiedTypeName name="prod.dao.IProdDao"/>
 <fullyQualifiedTypeName name="prod.dao.ProdDaoImpl"/>
 <fullyQualifiedTypeName name="prod.service.IProdService"/>
 <fullyQualifiedTypeName name="prod.service.ProdServiceImpl"/>
 <fullyQualifiedTypeName name="prod.vo.ProdVO"/>
 <fullyQualifiedTypeName name="member.vo.MemberVO"/>
+<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
+<fullyQualifiedTypeName name="member.service.IMemberService"/>
+<fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="member.vo.ZipVO"/>
 </qualifiedTypeNameHistroy>

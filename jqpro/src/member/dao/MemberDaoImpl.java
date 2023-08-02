@@ -43,20 +43,58 @@ public class MemberDaoImpl implements IMemberDao{
 
 	@Override
 	public String selectById(String mid) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		String str = "";
+		
+		SqlSession sql = MybatisUtil.getSqlSession();
+		
+		try {
+			str = sql.selectOne("member.selectById",mid);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sql.commit();
+			sql.close();
+		}
+		
+		return str;
 	}
 
 	@Override
 	public int insertMember(MemberVO vo) {
-		// TODO Auto-generated method stub
+		int cnt = 0;
+		
+		SqlSession sql = MybatisUtil.getSqlSession();
+		
+		try {
+			cnt = sql.insert("member.insertMember", vo);
+			if(cnt>0) sql.commit();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			sql.close();
+		}
+		
 		return 0;
 	}
 
 	@Override
 	public List<ZipVO> selectByDong(String dong) {
-		// TODO Auto-generated method stub
-		return null;
+		// 변수 선언
+		List<ZipVO> list = null;
+		
+		SqlSession sql = MybatisUtil.getSqlSession();
+		
+		try {
+			list = sql.selectList("member.selectByDong", dong);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sql.commit();
+			sql.close();
+		}
+		
+		return list;
 	}
 
 }
