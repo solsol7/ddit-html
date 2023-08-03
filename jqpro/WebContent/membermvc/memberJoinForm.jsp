@@ -8,8 +8,9 @@
 <title>Insert title here</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="../js/jquery-3.7.0.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../js/jquery.serializejson.min.js"></script>
 <script>
 
 proc1 = () => {
@@ -55,6 +56,79 @@ proc1 = () => {
 }//function끝
 
 $(function(){
+	
+	//전송버튼 클릭
+	$('#send').on('click',function(){
+		
+		//입력한 모든 값을 가져온다 - id, name, pwd, bir, hp, email, zip, add1, add2
+		fdata1 = $('#join').serialize();
+        fdata2 = $('#join').serializeArray();
+        fdata3 = $('#join').serializeJSON();
+		
+		console.log(fdata1);
+		console.log(fdata2);
+		console.log(fdata3);
+		
+		//입력한 모든 값을 가져온다 - id, name, pwd, bir, hp, email, zip, add1, add2
+		vid = $('#id').val();
+		vname = $('#name').val();
+		vpass = $('#pwd').val();
+		vbir = $('#bir').val();
+		vhp = $('#hp').val();
+		vmail = $('#email').val();
+		vzip = $('#zip').val();
+		vadd1 = $('#add1').val();
+		vadd2 = $('#add2').val();
+		
+		$.ajax({
+			url : "<%=request.getContextPath()%>/insertMember.do",
+			type : 'post',
+			data : fdata3,
+			success : function(res){
+				
+			},
+			error : function(xhr){
+				alert("상태 : "+xhr.status);
+			},
+			dataType : 'json'
+		});
+		
+		<%--
+		//입력한 모든 값을 가져온다 - id, name, pwd, bir, hp, email, zip, add1, add2
+		vid = $('#id').val();
+		vname = $('#name').val();
+		vpass = $('#pwd').val();
+		vbir = $('#bir').val();
+		vhp = $('#hp').val();
+		vmail = $('#email').val();
+		vzip = $('#zip').val();
+		vadd1 = $('#add1').val();
+		vadd2 = $('#add2').val();
+		
+		$.ajax({
+			url : "<%=request.getContextPath()%>/insertMember.do",
+			type : 'post',
+			data : {
+				"id" : vid,
+				"pass" : vpass,
+				"name" : vname,
+				"bir" : vbir, 
+				"hp" : vhp,
+				"mail" : vmail,
+				"zip" : vzip,
+				"add1" : vadd1,
+				"add2" : vadd2
+			},
+			success : function(res){
+				
+			},
+			error : function(xhr){
+				alert("상태 : "+xhr.status);
+			},
+			dataType : 'json'
+		});
+		--%>
+	});	//onclick
 	
 	//주소결과창에서 하나를 선택하면
 	$(document).on('click','.ziptr', function(){
@@ -130,7 +204,8 @@ input[type=button]{
 <body>
 <div class="container mt-3">
   <h2>회원가입</h2>
-  <form action="">  
+  
+  <form id="join">  
     <div class="mb-3 mt-3">
       <label for="id">아이디:</label>
       <input type="button" id="checkid" class="btn btn-outline-primary btn-sm" value="중복검사">
@@ -176,7 +251,7 @@ input[type=button]{
       <label for="add2">상세주소:</label>
       <input type="text" class="form-control" id="add2" name="mem_add2">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" id="send" class="btn btn-primary">Submit</button>
     <span id="joinspan"></span>
   </form>
 </div>

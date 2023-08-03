@@ -23,10 +23,16 @@
 <fullyQualifiedTypeName name="prod.service.IProdService"/>
 <fullyQualifiedTypeName name="prod.service.ProdServiceImpl"/>
 <fullyQualifiedTypeName name="prod.vo.ProdVO"/>
-<fullyQualifiedTypeName name="member.vo.MemberVO"/>
-<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
-<fullyQualifiedTypeName name="member.service.IMemberService"/>
-<fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="member.vo.ZipVO"/>
+<fullyQualifiedTypeName name="member.vo.MemberVO"/>
+<fullyQualifiedTypeName name="member.service.IMemberService"/>
+<fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
+<fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
+<fullyQualifiedTypeName name="board.service.IBoardService"/>
+<fullyQualifiedTypeName name="board.service.BoardServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="mybatis.config.MybatisUtil"/>
+<fullyQualifiedTypeName name="board.vo.PageVO"/>
 </qualifiedTypeNameHistroy>

@@ -75,7 +75,7 @@ public class MemberDaoImpl implements IMemberDao{
 			sql.close();
 		}
 		
-		return 0;
+		return cnt;
 	}
 
 	@Override
