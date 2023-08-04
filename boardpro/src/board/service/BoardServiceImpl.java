@@ -109,11 +109,18 @@ public class BoardServiceImpl implements IBoardService {
 		
 		
 		//시작페이지끝페이지 
-		
+		int perPage = PageVO.getPerPage();		//2
+		int startPage = ((page-1)/perPage * perPage)+1;
+		int endPage = startPage + perPage -1;
+		if(endPage > totalPage) endPage = totalPage;
 		
 		PageVO  vo = new PageVO();
 		
-		
+		vo.setStart(start);
+		vo.setEnd(end);
+		vo.setStartPage(startPage);
+		vo.setEndPage(endPage);
+		vo.setTotalPage(totalPage);
 		
 		
 		return vo;

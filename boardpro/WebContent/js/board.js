@@ -48,9 +48,12 @@ $.boardDeleteServer = function(){
 		
 		url  :  `${mypath}/BoardDelete.do`,
 		type : 'get',
-		data : {},
+		data : {"num" : vidx},
 		success : function(res){
-			
+			if(res.sw =="성공"){
+				currentPage = 1;
+				$.listPageServer(currentPage);
+			}
 		},
 		error : function(xhr){
 			alert("상태 : " + xhr.status)
@@ -117,7 +120,8 @@ $.replyWriteServer = function(){
 		type : 'post',
 
 		success : function(res){
-			
+			currentPage = 1;
+			$.listPageServer(currentPage);
 		},
 		error : function(xhr){
 			
@@ -129,9 +133,11 @@ $.boardWriteServer = function(){
 	$.ajax({
 		url : `${mypath}/BoardWrite.do`,
 		  type : 'post',
-
+		  data : fdata,
 		  success : function(res){
-			 
+			 if(res.sw=="성공"){
+				
+			}
 		  },
 		  error : function(xhr){
 			  alert("상태 : " + xhr.status);
@@ -155,24 +161,54 @@ $.listPageServer = function(cpage){
 				"sword" : vword
 		  },
 		  success : function(res){
-			  code =   `<div class="container mt-3">
-			            <div id="accordion">`;
-			  $.each(res.datas, function(i, v){
-				  
-				  
-				  
-			  })//$.each
-			  code += `</div>
-			          </div>`
-			  
-			    //리스트 출력
-			  $('#result').html(code);
-			  
-			  //페이지 출력
-//			  pager = pageList(res.sp,res.ep,res.tp);
-//			  $('#pagelist').html(pager);
-			    
-			   
+			code = `<div class="container mt-3">
+  						<div id="accordion">`
+			$.each(res.datas, function(i,v){
+				
+				content = v.content;	//엔터가 포함
+				content = content.replace(/\n/g,"<br>")
+				
+				code += `<div class="card">
+			      <div class="card-header">
+			        <a class="btn action" name="list" idx="${v.num}" data-bs-toggle="collapse" href="#collapse${v.num}">
+			        	${v.subject}
+			        </a>
+			      </div>
+			      <div id="collapse${v.num}" class="collapse" data-bs-parent="#accordion">
+			        <div class="card-body">
+			            <div class="p12">
+			               <p class="p1">
+			                             작성자:<span>${v.writer}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			                          이메일:<span>${v.mail}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			                          조회수:<span>${v.hit}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			                          날짜 :<span>${v.wdate}</span>         
+			               </p>
+			               <p class ="p2">
+			               
+			               <input idx="${v.num}" type="button"  value="수정" name="modify"  class="action">
+			               <input idx="${v.num}" type="button"  value="삭제" name="delete"  class="action">
+			               </p>
+			            </div>
+			            <p class="p3">
+			            	${content}
+			            </p>
+			            <p class="p4">
+			            <textarea rows="" cols="60"></textarea>
+			            <input idx="${v.num}" type="button"  value="등록" name="reply"  class="action">
+			            </p>
+			            
+			        </div>
+			      </div>
+			    </div>`
+			}); //$.each반복문 끝
+			
+			code += `</div>
+					</div>`;
+			//게시판 리스트 출력
+			$('#result').html(code);
+			//페이지 정보 출력
+			pager = pageList(res.sp, res.ep, res.tp);
+			$('#pagelist').html(pager);
 				          
 		  },//success
 		  error : function(xhr){
@@ -185,15 +221,31 @@ $.listPageServer = function(cpage){
 }
 
 pageList =function(sp,ep,tp){
-	//페이지 처리
-	   //이전
-	   
-	   //페이지번호 
-	  
-	   //다음 
-	   
-	   
-	   return pager;
-	   
-	 
+  //페이지 처리
+	//이전
+	pager = "";
+	pager += `<ul class="pagination">`;
+	if(sp > 1){
+		pager += `<li class="page-item"><a id="prev" class="page-link" href="#">Previous</a></li>`;
+		
+	}
+	//페이지번호 
+	for(i=sp; i<=ep; i++){
+		if(i==currentPage){
+			pager += `<li class="page-item active"><a class="page-link pageno" href="#">${i}</a></li>`;
+		}else{
+			pager += `<li class="page-item"><a class="page-link pageno" href="#">${i}</a></li>`;
+		}
+	}
+	
+	
+	//다음 
+	if(ep <tp){
+		pager +=`<li class="page-item"><a id="next" class="page-link" href="#">Next</a></li>`;
+	}
+	
+	pager += `</ul>`;
+	
+	return pager;
+	
 }

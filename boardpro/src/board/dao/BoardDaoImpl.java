@@ -26,14 +26,30 @@ public class BoardDaoImpl implements IBoardDao {
    @Override
    public int insertBoard(BoardVO vo) {
       int res = 0;
-      
+      try {
+          sql = MybatisUtil.getSqlSession();
+          res = sql.insert("board.insertBoard",vo);
+       }catch(Exception e){
+    	   e.printStackTrace();
+       } finally {
+          sql.commit();
+          sql.close();
+       }
       return res;
    }
 
    @Override
    public int deleteBoard(int num) {
-      int res = 0;
-      
+	   int res = 0;
+	      try {
+	          sql = MybatisUtil.getSqlSession();
+	          res = sql.insert("board.deleteBoard",num);
+	       }catch(Exception e){
+	    	   e.printStackTrace();
+	       } finally {
+	          sql.commit();
+	          sql.close();
+	       }
       return res;
    }
 
@@ -58,8 +74,8 @@ public class BoardDaoImpl implements IBoardDao {
          sql = MybatisUtil.getSqlSession();
          list = sql.selectList("board.selectByPage", map);
       }catch(Exception e){
-                              
-                          } finally {
+    	  e.printStackTrace();
+      } finally {
          sql.commit();
          sql.close();
       }

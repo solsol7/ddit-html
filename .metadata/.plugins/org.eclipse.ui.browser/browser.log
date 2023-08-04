@@ -386,3 +386,21 @@
 
 8월 03, 2023 15:35:00.584 NEW SESSION
 8월 03, 2023 15:35:00.584 [8880:2176:0803/153500.583:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+
+8월 04, 2023 14:25:03.994 NEW SESSION
+8월 04, 2023 14:25:03.995 [10504:3264:0804/142503.994:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 14:26:21.598 [10528:1752:0804/142621.598:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 15:09:08.610 [5764:4716:0804/150908.609:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 15:10:14.914 [6244:620:0804/151014.914:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 15:29:26.357 [8176:7764:0804/152926.357:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 15:35:12.65 [8176:9024:0804/153512.064:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for global.ib-ibi.com failed:
+8월 04, 2023 15:35:12.65 ----- Certificate i=0 (CN=*.ib-ibi.com,O=KBM Group LLC,L=Louisville,ST=Colorado,C=US) -----
+8월 04, 2023 15:35:12.65 ERROR: Time is after notAfter
+8월 04, 2023 15:35:12.65 
+8월 04, 2023 15:35:12.65 
+8월 04, 2023 16:03:28.785 [11448:8808:0804/160328.785:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 16:04:02.409 [1588:7768:0804/160402.409:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 16:21:18.598 [10900:7348:0804/162118.598:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 16:38:33.113 [12124:10060:0804/163833.113:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 17:20:22.62 [7228:6956:0804/172022.062:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+8월 04, 2023 17:43:57.329 [8656:4636:0804/174357.329:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
