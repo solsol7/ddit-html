@@ -177,6 +177,7 @@ $.listPageServer = function(cpage){
 			      <div id="collapse${v.num}" class="collapse" data-bs-parent="#accordion">
 			        <div class="card-body">
 			            <div class="p12">
+
 			               <p class="p1">
 			                             작성자:<span>${v.writer}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			                          이메일:<span>${v.mail}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -209,7 +210,7 @@ $.listPageServer = function(cpage){
 			//페이지 정보 출력
 			pager = pageList(res.sp, res.ep, res.tp);
 			$('#pagelist').html(pager);
-				          
+			
 		  },//success
 		  error : function(xhr){
 			  alert("상태 : " + xhr.status)
